@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet"  href="fonts/all.css">
+    <title>Blog</title>
+</head>
+<body>
+   <script>
+        function displayNav(){
+            document.getElementById("showThis").style.display = 'block';
+            document.getElementById("showThis").classList.add('navbtn') 
+         }
+         function hideNav(){
+            document.getElementById("showThis").style.display ='none' ;
+         } 
+   </script>
+
+   <div class="test">
+    <button class="testbtn"><i class="fa fa-bars"></i></button>
+    <nav>
+        <ul>
+          <li><a href="index.html"> HOME</a></li>
+          <li><a href="blog.html"> BLOG</a> </li>
+          <li><a href="#"> BRAND</a></li>  
+        </ul>
+    </nav>
+   </div>
+   <div class="removeTest">
+     <button class="removeTestbtn"><i class="fa fa-times"></i></button>
+   </div>
+
+<!-- for menu- onclick on 1024px and lower -->
+   <div class="navIcon">
+    <button class="navbtn" id="navbtn" onclick="displayNav()"><i class="fa fa-bars"></i></button>
+   </div>
+        <div id="showThis" class="slideIn">
+          <button class="cancelNavbtn" onclick="hideNav()" ><i class="fa fa-times"></i></button>
+          <div class="smallNav">
+            <ul>
+                <li><a href="index.html"> HOME</a></li>
+                <li><a href="blog.html"> BLOG</a> </li>
+                <li><a href="#"> BRAND</a></li>  
+              </ul>
+          </div>
+        </div>
+                    
+              <aside class="bookNow">
+                <p>Book Now - 08012345678</p>
+              </aside>
+
+            <section>
+                <div class="cont"> <div class="overlay"></div></div>
+                        
+                        <div class="headerCont">
+                        <div class="header">
+                            <p> 0147 M. Tshombe Avenue, Lagos, Lg 10074, NG</p>
+                            <br>
+                            <h1>MAXIMA'S</h1>
+                            <br>
+                            <h1>-HAIR SALON-</h1>
+                        </div>
+                </div>
+            
+                    <div class="blogSpot">
+                        <div class="blogArticle">
+                        <h1>BLOG</h1>
+                        <hr>
+                        <h4>HAIR STYLE EVENT IN ABUJA</h4>
+                        <p>Upbeat, chic, and funky salon. We are based on twenty-five years of 
+                          experience. We specialize in couture cuts and blowouts, men's cuts,
+                          natural and funky hair colors, and highlights...<a href="#">Read More</a></p>
+                         <h4>HAIR STYLE EVENT IN LAGOS</h4> 
+                         <p>Upbeat, chic, and funky salon. We are based on twenty-five years of 
+                            experience. We specialize in couture cuts and blowouts, men's cuts,
+                            natural and funky hair colors, and highlights...<a href="#">Read More</a></p>
+                        <h4>HAIR STYLE EVENT IN ONDO</h4>
+                        <p>Upbeat, chic, and funky salon. We are based on twenty-five years of 
+                            experience. We specialize in couture cuts and blowouts, men's cuts,
+                            natural and funky hair colors, and highlights...<a href="#">Read More</a></p>
+                       <h4>HAIR STYLE EVENT IN JOS</h4>
+                       <p>Upbeat, chic, and funky salon. We are based on twenty-five years of 
+                        experience. We specialize in couture cuts and blowouts, men's cuts,
+                        natural and funky hair colors, and highlights...<a href="#">Read More</a></p>
+                        <h4>HAIR STYLE EVENT IN OGUN</h4>
+                        <p>Upbeat, chic, and funky salon. We are based on twenty-five years of 
+                            experience. We specialize in couture cuts and blowouts, men's cuts,
+                            natural and funky hair colors, and highlights...<a href="#">Read More</a></p>
+                       </div>
+                    </div>  
+              
+            
+            </section>
+    
+</body>
+<footer>
+    <span> Designed by Tinnie</span>
+</footer>
+</html>

@@ -6,26 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet"  href="fonts/all.css">
+    <link rel="stylesheet" href="fonts/all.css">
     <title>Maxima hairs</title>
 </head>
-
+  
 <body>
-    <div class="menu">
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav></nav>
-       
-    </div>
-    <div href="#" class="menu-close" >
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </div>
+    <script>
+         function displayNav(){
+            document.getElementById("showThis").style.display = 'block';
+            document.getElementById("showThis").classList.add('navbtn') 
+         }
+         function hideNav(){
+            document.getElementById("showThis").style.display ='none' ;
+         }
+    </script>
+    
+    <div class="test">
+        <button class="testbtn"><i class="fa fa-bars"></i></button>
+        <nav>
+            <ul>
+              <li><a href="index.html"> HOME</a></li>
+              <li><a href="blog.html"> BLOG</a> </li>
+              <li><a href="#"> BRAND</a></li>  
+            </ul>
+        </nav>
+       </div>
+       <div class="removeTest">
+         <button class="removeTestbtn"><i class="fa fa-times"></i></button>
+       </div>
+
+    <!-- for menu- onclick on 1024px and lower -->
+       <div class="navIcon">
+        <button class="navbtn" id="navbtn" onclick="displayNav()"><i class="fa fa-bars"></i></button>
+       </div>
+            <div id="showThis" class="slideIn">
+              <button class="cancelNavbtn" onclick="hideNav()" ><i class="fa fa-times"></i></button>
+              <div class="smallNav">
+                <ul>
+                    <li><a href="index.html"> HOME</a></li>
+                    <li><a href="blog.html"> BLOG</a> </li>
+                    <li><a href="#"> BRAND</a></li>  
+                  </ul>
+              </div>
+            </div>
+        
   
    <aside class="bookNow">
        <p>Book Now - 08012345678</p>
@@ -145,6 +169,6 @@
     </section>
 
     <script src="js.js"></script>
-   <footer></footer> 
+   
 </body>
 </html>
